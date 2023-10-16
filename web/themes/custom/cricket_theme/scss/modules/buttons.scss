@@ -1,0 +1,98 @@
+@use '../base/color' as *;
+@use '../base/font' as *;
+
+.matches {
+  .view-content {
+    .slick-dots {
+      bottom: 18%;
+      display: flex;
+      align-items: center;
+      max-width: 450px;
+      margin-left: auto;
+      padding: 0 0.9375rem;
+      left: 0;
+      right: 0;
+    }
+
+    &.slick-dotted {
+      margin-bottom: 0;
+    }
+  }
+
+  .slick-prev::before,
+  .slick-next::before {
+    font-size: $primary-font-size;
+    color: $match-primary;
+  }
+
+  .slick-prev::before {
+    content: "";
+  }
+
+  .slick-next::before {
+    content: "";
+  }
+
+  .slick-prev,
+  .slick-next {
+    border: 2px solid $match-primary;
+    background-color: $match-primary-button;
+    padding: 20px;
+  }
+
+  .slick-prev {
+    left: 1150px;
+    top: 555px;
+    z-index: 1;
+  }
+
+  .slick-next {
+    right: 20px;
+    top: 555px;
+  }
+
+  .bi-chevron-left,
+  .bi-chevron-right {
+    font-size: 35px;
+    color: $match-primary;
+    position: absolute;
+  }
+
+  .bi-chevron-left {
+    top: 2px;
+    left: 2px;
+  }
+
+  .bi-chevron-right {
+    top: 2px;
+    right: 2px;
+  }
+}
+
+.matches .slick-dots {
+  li {
+    button {
+      width: 30px;
+    }
+
+    button::before {
+      position: absolute;
+      top: 9px;
+      content: '';
+      width: 30px;
+      height: 3px;
+      background: $match-primary;
+      opacity: 0.3;
+    }
+
+    &.slick-active {
+      button::before {
+        background: $match-primary;
+      }
+    }
+
+    button:hover:before {
+      background: $match-primary;
+    }
+  }
+}

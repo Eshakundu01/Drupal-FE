@@ -7,6 +7,7 @@ carousel:
       css/layouts/region.css: {  }
     component:
       css/modules/slider.css: {  }
+      css/modules/buttons.css: {  }
 
   js:
     //cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js: { type: external, minified: true }

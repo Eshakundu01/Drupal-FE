@@ -2,15 +2,43 @@
 @use '../base/font' as *;
 
 .matches-slider {
-  .matches-title,
-  .matches-date-time,
-  .matches-location,
-  .matches-details {
-    position: absolute;
-    left: 0;
-    padding: 0 0.9375rem;
+  .matches-poster {
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      background: $accent-bg;
+      opacity: 0.6;
+    }
+  }
+
+  &::after {
+    content: url(../../images/CWC_Logo.png);
+    padding: 0 20px;
     margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-30%, -25%) scale(0.3);
+  }
+}
+
+.matches-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 0.9375rem;
+  margin: 0 auto;
+  transform: translate(0, -50%);
+  font-family: Arial, Helvetica, sans-serif;
+
+  .matches-content-field {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1140px;
   }
 
   .matches-location,
@@ -22,26 +50,19 @@
     color: $match-date;
   }
 
-  .matches-poster::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    background: $accent-bg;
-    opacity: 0.6;
+  .matches-location,
+  .matches-date-time {
+    font-size: $primary-font-size;
+    font-weight: 600;
   }
 
   .matches-location {
-    top: 60%;
-    transform: translate(0, -55%);
-
-    &-exact::before {
+    &::before {
       content: "\2022";
       font-weight: bold;
       color: $match-location;
       font-size: $primary-font-size;
+      padding-right: 10px;
     }
   }
 
@@ -52,22 +73,18 @@
   }
 
   .matches-title {
-    top: 50%;
-    transform: translate(0, -50%);
-
     a {
       text-decoration: none;
       color: $match-primary;
+      font-weight: 900;
+      font-size: 40px;
     }
   }
 
-  .matches-date-time {
-    top: 55%;
-    transform: translate(0, -53%);
-  }
-
   .matches-details {
-    top: 70%;
-    transform: translate(0, -70%);
+    p {
+      max-width: 600px;
+      margin: 16px 0;
+    }
   }
 }
