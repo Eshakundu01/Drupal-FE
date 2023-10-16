@@ -1,0 +1,22 @@
+uuid: 9895e85a-8f04-4919-9f6c-5ba89ed738c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cricket_theme
+_core:
+  default_config_hash: 2_xxaOb8b_0AUgYFdJLxIBDDwufyh6YozhGfBd97p38
+id: cricket_theme_powered_by_drupal
+theme: cricket_theme
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

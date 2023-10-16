@@ -1,0 +1,25 @@
+uuid: 8d9e4f9f-2080-4cd6-b497-5c6207cc1dd5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cricket_theme
+_core:
+  default_config_hash: nuW1Z5MdvzbCCEZ9RQojaEWB6Zni32zTq-v5OWbS2sc
+id: cricket_theme_branding
+theme: cricket_theme
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

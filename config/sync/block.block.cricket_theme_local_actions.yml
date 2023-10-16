@@ -1,0 +1,20 @@
+uuid: e7b646d1-4756-4a6c-b733-6540cf58f1ad
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cricket_theme
+_core:
+  default_config_hash: MBqG1B5mr5-fPSCDyTR6z2zVTRxZ10XeS_pAw6C7za4
+id: cricket_theme_local_actions
+theme: cricket_theme
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

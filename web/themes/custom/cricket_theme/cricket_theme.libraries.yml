@@ -1,0 +1,17 @@
+carousel:
+  css:
+    theme:
+      //cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css: { type: external }
+      //cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css: { type: external }
+      //cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css: { type: external }
+      css/layouts/region.css: {  }
+    component:
+      css/modules/slider.css: {  }
+
+  js:
+    //cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js: { type: external, minified: true }
+    js/matches-slider.js: {  }
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once

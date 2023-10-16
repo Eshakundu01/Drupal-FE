@@ -1,0 +1,22 @@
+uuid: c445e7af-46c0-4413-94aa-72f708d6f684
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cricket_theme
+_core:
+  default_config_hash: 1o0W13wt232YmsDYiRA5xtlFq0L2WNS7FmIVbBeuhIY
+id: cricket_theme_content
+theme: cricket_theme
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

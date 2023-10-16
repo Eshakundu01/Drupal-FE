@@ -1,0 +1,8 @@
+uuid: 8289aed7-db23-4b72-b96e-714e97aa5cb3
+langcode: en
+status: true
+dependencies: {  }
+name: Teams
+vid: teams
+description: 'List of cricket teams participating in world cup'
+weight: 0

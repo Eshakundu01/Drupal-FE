@@ -1,0 +1,15 @@
+uuid: 1ab8b705-05fe-4ebf-93bd-0abf5d837096
+langcode: en
+status: true
+dependencies: {  }
+name: cricket_slider
+label: 'Cricket Slider(2600x1400)'
+effects:
+  cb59849a-3b06-433f-8828-6fcab7924b95:
+    uuid: cb59849a-3b06-433f-8828-6fcab7924b95
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 2600
+      height: 1400
+      anchor: center-center
