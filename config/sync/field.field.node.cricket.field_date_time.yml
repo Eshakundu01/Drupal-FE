@@ -1,0 +1,21 @@
+uuid: c69446cb-1263-4de0-aa9e-dcbdc33a0d5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_time
+    - node.type.cricket
+  module:
+    - datetime
+id: node.cricket.field_date_time
+field_name: field_date_time
+entity_type: node
+bundle: cricket
+label: 'Date & Time'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

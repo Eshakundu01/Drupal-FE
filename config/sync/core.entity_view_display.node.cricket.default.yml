@@ -1,0 +1,78 @@
+uuid: 132ff9d5-8da2-4cb2-b09f-d7e58697d6cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cricket.body
+    - field.field.node.cricket.field_carousel_image
+    - field.field.node.cricket.field_date_time
+    - field.field.node.cricket.field_location
+    - field.field.node.cricket.field_team_1
+    - field.field.node.cricket.field_team_2
+    - node.type.cricket
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.cricket.default
+targetEntityType: node
+bundle: cricket
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_carousel_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_date_time:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_location:
+    type: basic_string
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_team_1:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_team_2:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+hidden: {  }

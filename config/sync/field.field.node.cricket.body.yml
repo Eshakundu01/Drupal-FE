@@ -1,0 +1,24 @@
+uuid: e4e0371a-c367-4274-bc52-f7e31e6a2336
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.cricket
+  module:
+    - text
+id: node.cricket.body
+field_name: body
+entity_type: node
+bundle: cricket
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

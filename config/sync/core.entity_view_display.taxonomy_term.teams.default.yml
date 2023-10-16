@@ -1,0 +1,30 @@
+uuid: 320c8e07-40a4-4298-8852-457bb013c661
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.teams.field_team_code
+    - taxonomy.vocabulary.teams
+  module:
+    - text
+id: taxonomy_term.teams.default
+targetEntityType: taxonomy_term
+bundle: teams
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_team_code:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

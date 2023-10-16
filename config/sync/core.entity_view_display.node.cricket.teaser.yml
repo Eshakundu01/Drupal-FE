@@ -1,0 +1,40 @@
+uuid: 546d4a90-b9c6-45c6-84fd-693d9290ab14
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cricket.body
+    - field.field.node.cricket.field_carousel_image
+    - field.field.node.cricket.field_date_time
+    - field.field.node.cricket.field_location
+    - field.field.node.cricket.field_team_1
+    - field.field.node.cricket.field_team_2
+    - node.type.cricket
+  module:
+    - text
+    - user
+id: node.cricket.teaser
+targetEntityType: node
+bundle: cricket
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_carousel_image: true
+  field_date_time: true
+  field_location: true
+  field_team_1: true
+  field_team_2: true

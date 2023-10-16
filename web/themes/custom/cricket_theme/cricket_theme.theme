@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * theme file of custom theme.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function cricket_theme_preprocess_views_view_unformatted(&$variables) {
+  $view = $variables['view'];
+  $row = $variables['rows'];
+
+  if ($view->id() == 'cricket' && $view->current_display == 'page_1') {
+    foreach ($row as $id => $value) {
+      $variables['rows'][$id]['attributes']->addClass('matches-slider');
+    }
+    $variables['#attached']['library'][] = 'cricket_theme/carousel';
+  }
+}

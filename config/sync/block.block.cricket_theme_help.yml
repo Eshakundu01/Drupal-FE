@@ -1,0 +1,22 @@
+uuid: f808fafe-bbb6-43d0-b1f0-bf4e58a3ea12
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - cricket_theme
+_core:
+  default_config_hash: S0Y16qIQfKiOEzWlddOGk3u_BKwAruAheA8VVFfGbLc
+id: cricket_theme_help
+theme: cricket_theme
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

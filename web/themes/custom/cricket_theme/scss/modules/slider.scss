@@ -1,0 +1,90 @@
+@use '../base/color' as *;
+@use '../base/font' as *;
+
+.matches-slider {
+  .matches-poster {
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      background: $accent-bg;
+      opacity: 0.6;
+    }
+  }
+
+  &::after {
+    content: url(../../images/CWC_Logo.png);
+    padding: 0 20px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-30%, -25%) scale(0.3);
+  }
+}
+
+.matches-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 0.9375rem;
+  margin: 0 auto;
+  transform: translate(0, -50%);
+  font-family: Arial, Helvetica, sans-serif;
+
+  .matches-content-field {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1140px;
+  }
+
+  .matches-location,
+  .matches-details {
+    color: $match-primary;
+  }
+
+  .matches-date-time {
+    color: $match-date;
+  }
+
+  .matches-location,
+  .matches-date-time {
+    font-size: $primary-font-size;
+    font-weight: 600;
+  }
+
+  .matches-location {
+    &::before {
+      content: "\2022";
+      font-weight: bold;
+      color: $match-location;
+      font-size: $primary-font-size;
+      padding-right: 10px;
+    }
+  }
+
+  .matches-title,
+  .matches-date-time,
+  .matches-location {
+    text-transform: uppercase;
+  }
+
+  .matches-title {
+    a {
+      text-decoration: none;
+      color: $match-primary;
+      font-weight: 900;
+      font-size: 40px;
+    }
+  }
+
+  .matches-details {
+    p {
+      max-width: 600px;
+      margin: 16px 0;
+    }
+  }
+}

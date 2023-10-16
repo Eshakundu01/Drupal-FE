@@ -1,0 +1,22 @@
+uuid: b1a300e0-4bc3-4c58-aca8-4d627a91bedc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.cricket
+id: node.cricket.promote
+field_name: promote
+entity_type: node
+bundle: cricket
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
